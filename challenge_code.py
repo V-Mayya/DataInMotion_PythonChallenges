@@ -19,7 +19,7 @@ input("HeLLo!")
 
 #output: [0, 2, 3] 
 
-##A slight variation to the 'Crazy Kangaroo' Challenge on Hackerearth (https://www.hackerearth.com/problem/algorithm/crazy-kangaroo):
+##A slight variation of the 'Crazy Kangaroo' Challenge on Hackerearth (https://www.hackerearth.com/problem/algorithm/crazy-kangaroo):
 #Goal: For each test case print the number of jumps the kangaroo had to make in the range [A, B] inclusive. 
 #Note: The kangaroo jumps only to those positions which are multiples of M or hop count.
 
