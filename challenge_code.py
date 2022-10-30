@@ -30,7 +30,6 @@ B = list[1]
 M = list[2]
 
 all_numbers = [A]
-
 for i in range(B-A): 
     i = A
     A = A+1
