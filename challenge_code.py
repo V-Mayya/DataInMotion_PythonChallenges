@@ -45,6 +45,20 @@ count_of_multiple_values = len(multiple_values)
 
 print(count_of_multiple_values) #output in this case is 2
 
+##Week 17 challenge - Data in Motion
+#2. Given a list [1,2,3,4,5,6], create a new variable called answer2, which is a new list of all the even values. 
+
+list = [1, 2, 3, 4, 5, 6]
+answer2 = []
+
+for num in list:
+    if num%2 == 0:
+        answer2.append(num)     
+print(answer2)
+
+#output: [2, 4, 6] 
+
+
 
 
 
