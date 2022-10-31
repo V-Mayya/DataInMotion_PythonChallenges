@@ -46,6 +46,17 @@ count_of_multiple_values = len(multiple_values)
 print(count_of_multiple_values) #output in this case is 2
 
 ##Week 17 challenge - Data in Motion
+#1. Given a list ["Elie", "Tim", "Matt"], create a variable called answer, which is a new list containing the first letter of each name in the list. 
+
+names_list = ["Ellie", "Tim", "Matt"]
+answer = []
+
+for name in names_list:
+    list_name = list(name)
+    first_letter = list_name[0]
+    answer.append(first_letter)
+print(answer)
+
 #2. Given a list [1,2,3,4,5,6], create a new variable called answer2, which is a new list of all the even values. 
 
 list = [1, 2, 3, 4, 5, 6]
