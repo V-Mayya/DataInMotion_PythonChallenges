@@ -1,4 +1,4 @@
--- #Week 18 Data in Motion SQL Challenge (https://8weeksqlchallenge.com/case-study-1/ - Q7. to Q10. of case study): 
+-- (https://8weeksqlchallenge.com/case-study-1/ - Q7. to Q8. of case study): 
 
 CREATE database dannys_diner;
 
