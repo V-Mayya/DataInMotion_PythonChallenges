@@ -69,8 +69,21 @@ print(answer2)
 
 #output: [2, 4, 6] 
 
+##Week 19 challenge - Data in Motion
+#Given a list of client emails, create a function that takes in the list as an argument and returns a new list with only the domain of each email. 
+# e.g: clients = ['brucewayne@gotham.com', 'homer_simpson@springfieldnuclear.com', 'hank_hill@arlenpropane.com', 'petergriffin@pawtucketbrewery.com']
+# output: get_domains(clients) = ['gotham.com', 'springfieldnuclear.com', 'arlenpropane.com', 'pawtucketbrewery.com']
 
+clients = ['brucewayne@gotham.com', 'homer_simpson@springfieldnuclear.com', 'hank_hill@arlenpropane.com', 'petergriffin@pawtucketbrewery.com']
+def get_domains(clients):
+    domains = []
+    for email in clients:
+        part_two = email.split("@")
+        part_two = part_two[1]
+        domains.append(part_two)
+    return domains
 
+print(get_domains(clients))
 
 
 
