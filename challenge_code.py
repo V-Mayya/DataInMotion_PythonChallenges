@@ -85,6 +85,25 @@ def get_domains(clients):
 
 print(get_domains(clients))
 
+##Week 23 challenge - Data in Motion
+#Define a function contains_blue() that accepts any number of arguments. It should return True if any of the arguments are "blue" (all lowercase). 
+#Otherwise, it should return False. 
+#contains_blue("green", False, 37, "purple", "hello world") -> output: False
+
+def contains_blue(*input):
+    true_false_list = []
+    input_length = len(input)
+    
+    for i in range(len(input)): 
+        check = input[i]=="blue"
+        true_false_list.append(check)
+        
+    if True in true_false_list:
+        print("True")
+    else:
+        print("False")
+    
+print(contains_blue("green", False, 37, "purple", "hello world")) 
 
 
 
