@@ -115,7 +115,7 @@ def contains_blue(*input):
     
 print(contains_blue("green", False, 37, "purple", "hello world")) 
 
-#OR alternative solution (between lines 95 to 99):
+#OR alternative solution (between 'input_length = len(input)' to 'for i in range(len(input))'):
      for i in input: 
         check = i=="blue"
         true_false_list.append(check)
