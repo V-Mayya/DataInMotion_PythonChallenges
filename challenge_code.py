@@ -69,6 +69,16 @@ print(answer2)
 
 #output: [2, 4, 6] 
 
+#extension: Given a list [2,4,7,3,14,19], check if a number in the list is odd (output: 'True'). Otherwise (even number): 'False'. 
+
+l = [2,4,7,3,14,19]
+for i in l:
+    number = i
+    odd_check = lambda i: True if number%2 != 0 else False
+    print(odd_check(i))  
+  
+#output: False, False, True, True, False, True    
+    
 ##Week 19 challenge - Data in Motion
 #Given a list of client emails, create a function that takes in the list as an argument and returns a new list with only the domain of each email. 
 # e.g: clients = ['brucewayne@gotham.com', 'homer_simpson@springfieldnuclear.com', 'hank_hill@arlenpropane.com', 'petergriffin@pawtucketbrewery.com']
