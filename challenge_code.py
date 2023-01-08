@@ -101,22 +101,11 @@ print(get_domains(clients))
 #contains_blue("green", False, 37, "purple", "hello world") -> output: False
 
 def contains_blue(*input):
-    true_false_list = []
-    input_length = len(input)
+    true_false_list = [input[i]=="blue" for i in range(len(input))]
+    return "True" if True in true_false_list else "False"
     
-    for i in range(len(input)): 
-        check = input[i]=="blue"
-        true_false_list.append(check)
-        
-    if True in true_false_list:
-        print("True")
-    else:
-        print("False")
-    
-print(contains_blue("green", False, 37, "purple", "hello world")) 
+print(contains_blue("green", False, 37, "purple", "hello world"))
 
-#OR alternative solution (between 'input_length = len(input)' to 'for i in range(len(input))'):
-     for i in input: 
-        check = i=="blue"
-        true_false_list.append(check)
+#OR alternative solution (after def contains_blue(*input)):
+true_false_list = [i=="blue" for i in input]
 
