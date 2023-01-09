@@ -117,6 +117,6 @@ true_false_list = [i=="blue" for i in input]
 person = [["name", "Bruce"], ["job", "Batman"], ["city", "Gotham"]]
 answer = {}
 for list in person:
-    answer[list[0]] = list[-1]
+    answer[list[0]] = list[-1] #or list[1]
 
 print(answer)
