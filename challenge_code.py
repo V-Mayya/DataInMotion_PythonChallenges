@@ -109,3 +109,14 @@ print(contains_blue("green", False, 37, "purple", "hello world"))
 #OR alternative solution (after def contains_blue(*input)):
 true_false_list = [i=="blue" for i in input]
 
+##Week 24 challenge - Data in Motion
+#Given a person variable: person = [["name", "Bruce"], ["job", "Batman"], ["city", "Gotham"]], 
+#Create a dictionary called answer , that makes each first item in each list a key and the second item a corresponding value. 
+#This is the end goal: {'name': 'Bruce', 'job': 'Batman', 'city': 'Gotham'}.
+
+person = [["name", "Bruce"], ["job", "Batman"], ["city", "Gotham"]]
+answer = {}
+for list in person:
+    answer[list[0]] = list[-1]
+
+print(answer)
