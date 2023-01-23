@@ -146,22 +146,23 @@ for n in range(3):
 
 user_list_points = [points[userchoice] for userchoice in user_choice_list]
 
-#Computer (c_points) and user points (u_points): 
-u_points = 0
-c_points = 0
+#Computer (c_list) and user points (u_list): 
+u_list = []
+c_list = []
     
-for user, comp in zip(user_list_points, new_comp_list_points):
-    if user-comp < 0:
-        c_points += 1
-    elif user-comp > 0:
-        u_points += 1
-    else: 
-        u_points = 0
-        c_points = 0 
+for user, comp in zip(user_list_points, new_comp_list_points):  
+    if user < comp:
+        c_points = 1
+        c_list.append(c_points)
+        
+    elif user > comp:
+        u_points = 1
+        u_list.append(u_points)
 
-if u_points > c_points:
-    print("Great, you win! You got {} points while I got {}.".format(u_points,c_points))
-elif u_points == c_points:
-    print("Sorry, it's a tie. You got {} points while I got {}.".format(u_points,c_points))
+#Comparing points: 
+if sum(u_list) > sum(c_list):
+    print("Great, you win! You got {} points while I got {}.".format((sum(u_list)),(sum(c_list))))
+elif sum(u_list) == sum(c_list):
+    print("Sorry, it's a tie. You got {} points while I got {}.".format((sum(u_list)),(sum(c_list))))
 else:
-    print("Sorry, I win. You got {} points while I got {}.".format(u_points,c_points))
+    print("Sorry, I win. You got {} points while I got {}.".format((sum(u_list)),(sum(c_list))))
