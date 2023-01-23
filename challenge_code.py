@@ -120,3 +120,48 @@ for list in person:
     answer[list[0]] = list[-1] #or list[1]
 
 print(answer)
+
+##Week 26 challenge - Data in Motion
+#Optional bonus: Program that simulates rock, paper scissors: 
+#(Elementary game where first to 3 points wins)
+
+import random
+
+#Points dictionary (R beats S and P, S beats P):
+points = {"Rock": 2, "Scissors": 1,"Paper": 0}
+
+#Computer choice 
+comp_choice_list = ["Rock", "Scissors", "Paper"]
+new_comp_list_random = [comp_choice_list[random.randint(0,2)] for choice in comp_choice_list]
+new_comp_list_points = [points[newchoice] for newchoice in new_comp_list_random]
+
+#User choice
+n = 0
+user_choice_list = []
+for n in range(3):
+    user_choice = str(input("'Rock', 'Paper' or 'Scissors'? "))
+    print("I chose {}!".format(new_comp_list_random[n]))
+    user_choice_list.append(user_choice)
+    n += 1
+
+user_list_points = [points[userchoice] for userchoice in user_choice_list]
+
+#Computer (c_points) and user points (u_points): 
+u_points = 0
+c_points = 0
+    
+for user, comp in zip(user_list_points, new_comp_list_points):
+    if user-comp < 0:
+        c_points += 1
+    elif user-comp > 0:
+        u_points += 1
+    else: 
+        u_points = 0
+        c_points = 0 
+
+if u_points > c_points:
+    print("Great, you win! You got {} points while I got {}.".format(u_points,c_points))
+elif u_points == c_points:
+    print("Sorry, it's a tie. You got {} points while I got {}.".format(u_points,c_points))
+else:
+    print("Sorry, I win. You got {} points while I got {}.".format(u_points,c_points))
