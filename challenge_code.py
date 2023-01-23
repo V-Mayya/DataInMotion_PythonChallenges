@@ -126,7 +126,7 @@ print(answer)
 #(Elementary game where first to 3 points wins)
 import random
 
-#Points dictionary (R beats S and P, S beats P and P beats none):
+#Points dictionary (R beats S and P, S beats P and P beats none - slight variation):
 points = {"Rock": 2, "Scissors": 1,"Paper": 0}
 
 #Computer choice 
