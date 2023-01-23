@@ -161,8 +161,8 @@ for user, comp in zip(user_list_points, new_comp_list_points):
 
 #Comparing points: 
 if sum(u_list) > sum(c_list):
-    print("Great, you win! You got {} points while I got {}.".format(sum(u_list),sum(c_list))
+    print("Great, you win! You got {} points while I got {}.".format((sum(u_list)),(sum(c_list))))
 elif sum(u_list) == sum(c_list):
-    print("Sorry, it's a tie. You got {} points while I got {}.".format(sum(u_list),sum(c_list))
+    print("Sorry, it's a tie. You got {} points while I got {}.".format((sum(u_list)),(sum(c_list))))
 else:
-    print("Sorry, I win. You got {} points while I got {}.".format(sum(u_list),sum(c_list))
+    print("Sorry, I win. You got {} points while I got {}.".format((sum(u_list)),(sum(c_list))))
