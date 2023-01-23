@@ -124,7 +124,6 @@ print(answer)
 ##Week 26 challenge - Data in Motion
 #Optional bonus: Program that simulates rock, paper scissors: 
 #(Elementary game where first to 3 points wins)
-
 import random
 
 #Points dictionary (R beats S and P, S beats P):
