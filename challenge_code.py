@@ -122,7 +122,7 @@ for list in person:
 print(answer)
 
 ##Week 26 challenge - Data in Motion
-#Optional bonus: Program that simulates rock, paper scissors: 
+#Optional bonus: Program that simulates rock, paper, scissors: 
 #(Elementary game where first to 3 points wins)
 import random
 
