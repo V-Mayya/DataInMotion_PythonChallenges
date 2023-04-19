@@ -175,10 +175,7 @@ def majority_vote(list_of_votes):
     
     # distinct set of votes in list
     list_of_votes_copy = []
-    
-    for vote in list_of_votes:
-        if vote not in list_of_votes_copy:
-            list_of_votes_copy.append(vote)
+    [list_of_votes_copy.append(vote) for vote in list_of_votes if vote not in list_of_votes_copy] 
         
     # check if distinct votes in copy matches original list of votes and counting number of votes for each distinct vote
     count_list = []
