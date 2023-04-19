@@ -195,7 +195,7 @@ def majority_vote(list_of_votes):
         if number_of_votes > len(list_of_votes)/2:
             message = f"{distinct_vote}"
             break
-        # either no majority vote or empty list
+        # no majority vote 
         else:
             message = "None"
     return message
