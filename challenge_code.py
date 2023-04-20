@@ -184,7 +184,7 @@ def majority_vote(list_of_votes):
         n = 0
         for i in range(len(list_of_votes)): 
             if vote == list_of_votes[i]:
-                n = n+1
+                n += 1
         tuple_values = (n, vote)
         count_list.append(tuple_values) 
         
