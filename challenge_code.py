@@ -200,4 +200,19 @@ def majority_vote(list_of_votes):
 majority_votes = majority_vote(["A", "B", "B", "A", "C", "C"])
 print(majority_votes)  
  
+## FCC interview problem: Given 2 integers L and R, count how many prime integers are on the interval [L,R].
+# Note: the below code does not consider exceptions and error handling where L or R are negative, 0, the same or interchanged (L>R). 
+
+def prime_numbers(L, R):
+    total_count_list = []
+    for num in range(L, R+1):
+        count = [num%i == 0 for i in range(2,num)]
+        total_count_list.append(sum(count))      
+    n = 0 
+    for i in total_count_list:
+        if i == 0:
+            n+=1
+    return n
+    
+number_of_prime_numbers = prime_numbers(5, 15) # or any other numbers in interval chosen by user
 
