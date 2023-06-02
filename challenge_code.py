@@ -240,7 +240,6 @@ for id_no in unique_product_ids:
     values.append(tuple_values)
 
 values.sort(reverse=True)
-print(values)
 print(f"Product {values[0][1]} has the highest total sales. ")
 
 for i in range(1,len(values)):
