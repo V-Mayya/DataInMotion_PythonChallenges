@@ -270,6 +270,6 @@ def func(an_array, z_value):
     return an_array
  
 data = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100])
-new_array = func(data, 0.4) # (example: -0.4 <= z score <= 0.4 are outliers) 
-print(new_array) # [4 5 6 7 8 9 10] 
+new_array = func(data, 0.4) # (example: -0.4 <= z score <= 0.4 are outliers and array is 'data') 
+print(new_array) # [4 5 6 7 8 9 10] -> final array with outliers removed
   
