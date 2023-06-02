@@ -211,3 +211,39 @@ def prime_numbers(L, R):
     
 number_of_prime_numbers = prime_numbers(5, 15) # or any other numbers in interval chosen by user
 
+## Data in Motion Challenge
+# Let's assume you have a list of tuples stored in the variable transactions, each representing a transaction in an e-commerce store where the first element is the transaction ID, the second element is the product ID, and the third element is the price.
+# Write a Python function to find the product with the highest total sales.
+
+transactions = [ 
+(1, 101, 15.0), 
+(2, 102, 20.0), 
+(3, 101, 15.0), 
+(4, 103, 10.0), 
+(5, 102, 20.0), 
+(6, 101, 15.0), 
+(7, 103, 10.0), 
+(8, 102, 20.0), 
+(9, 103, 10.0), 
+] 
+
+product_ids = [transaction[1] for transaction in transactions]
+unique_product_ids = set(product_ids)
+
+values = []
+for id_no in unique_product_ids:
+    n = 0 
+    for transaction in transactions:
+        if id_no == transaction[1]:
+            n+=1
+    tuple_values = (n, id_no)
+    values.append(tuple_values)
+
+values.sort(reverse=True)
+print(values)
+print(f"Product {values[0][1]} has the highest total sales. ")
+
+for i in range(1,len(values)):
+    if values[i][0] == values[0][0]:
+        print(f"Product {values[i][1]} also has the highest total sales.")
+
