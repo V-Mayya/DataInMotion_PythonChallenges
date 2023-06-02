@@ -245,4 +245,31 @@ print(f"Product {values[0][1]} has the highest total sales. ")
 for i in range(1,len(values)):
     if values[i][0] == values[0][0]:
         print(f"Product {values[i][1]} also has the highest total sales.")
+        
+## Data in Motion Challenge
+# Given the following numpy array, data, write a Python program to remove outliers using the Z-score method: 
 
+import numpy as np
+    
+def func(an_array, z_value):
+    # mean, standard deviation and empty array with arbitary numbers
+    mean = data.mean()
+    std_dev = data.std()
+    new_data = np.empty(len(data))
+
+    # create z score values to slice through
+    for integer, i in enumerate(an_array):
+        z_score = (i-mean)/std_dev
+        new_data[integer] = z_score
+    
+    # absolute value to find values both negative and positive outliers
+    new_data = np.absolute(new_data)
+
+    # slice through original array based on index postions of new array
+    an_array = np.delete(data, np.where(new_data>z_value)) 
+    return an_array
+ 
+data = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100])
+new_array = func(data, 0.4) # (example: -0.4 <= z score <= 0.4 are outliers) 
+print(new_array) # [4 5 6 7 8 9 10] 
+  
