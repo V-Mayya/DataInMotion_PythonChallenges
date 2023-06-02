@@ -252,7 +252,7 @@ for i in range(1,len(values)):
 import numpy as np
     
 def func(an_array, z_value):
-    # mean, standard deviation and empty array with arbitary numbers
+    # mean, standard deviation and empty array with arbitrary numbers
     mean = data.mean()
     std_dev = data.std()
     new_data = np.empty(len(data))
