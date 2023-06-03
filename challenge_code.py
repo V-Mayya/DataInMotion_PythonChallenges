@@ -260,11 +260,8 @@ def func(an_array, z_value):
     # create z score values to slice through 
     for integer, i in enumerate(an_array):
         z_score = (i-mean)/std_dev
-        new_data[integer] = z_score
-    
-    # absolute value to find both negative and positive outliers
-    new_data = np.absolute(new_data)
-
+        new_data[integer] = np.absolute(z_score) # absolute value to find both negative and positive outliers
+        
     # slice through original array based on index postions of new array
     an_array = np.delete(data, np.where(new_data>z_value)) 
     return an_array
