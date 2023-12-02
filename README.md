@@ -2,6 +2,7 @@
 **My attempt at coding solutions for Python and SQL challenges (Advent of Code, Data in Motion, Hackerearth, HackerRank challenges and others)**
 
 ---
+<img src="SimonWilkesUnsplash.png" width="435" height="350" />
 
 ‣ This repository includes some of my code for the weekly python challenges created by Data in Motion. It may also include challenges from other platforms (such as Hackerearth and HackerRank) as well and will be updated accordingly. 
 
