@@ -11,7 +11,6 @@ with open('advent_c_challenge1.csv', 'r') as file:
 final_sum = sum(all_results)
 
 # Part 2
-
 a_dict = {"one": "1", "two": "2", "three": "3",
           "four": "4", "five": "5", "six": "6",
           "seven": "7", "eight": "8", "nine": "9",}
@@ -31,9 +30,9 @@ with open('advent_c_challenge1.csv', 'r') as file:
                  for numbers in a_dict.items():
                      if numbers[0] in initial:
                          the_list.append(numbers[1])
-                         initial = initial[-2:] 
-                       
+                         initial = initial[-2:]         
          final_list = [the_list[0], the_list[-1]]
          joined_nos = int("".join(final_list))  
          final_joined_nos.append(joined_nos)
+       
 final_joined_nos_sum = sum(final_joined_nos)
