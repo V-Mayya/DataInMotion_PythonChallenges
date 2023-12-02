@@ -1,5 +1,5 @@
 # Python and SQL Challenges
-**My attempt at coding solutions for online python and SQL challenges (Data in Motion, Hackerearth, HackerRank challenges and others)**
+**My attempt at coding solutions for online python and SQL challenges (Advent of Code, Data in Motion, Hackerearth, HackerRank challenges and others)**
 
 ---
 
