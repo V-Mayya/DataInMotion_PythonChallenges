@@ -1,6 +1,6 @@
 # Part 1
 all_results = []
-with open('advent_c_challenge1.csv', 'r') as file:
+with open('advent_c_challenge1.csv', 'r') as file: 
   reader = csv.reader(file)
   for row in reader:
     string = str(row)
