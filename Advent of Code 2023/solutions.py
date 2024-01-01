@@ -38,4 +38,4 @@ with open('advent_c_challenge1.csv', 'r') as file:
        
 final_joined_nos_sum = sum(final_joined_nos)
 
-# Will add other solutions when I get time to! 👀
+# Will add other solutions when I find the time to! 👀
